@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="dation.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="script.js"></script>
+
+    <title>Dation CSS</title>
+
+</head>
+
+<body>
+
+    <!-- NAV MOBILE -->
+    <nav class="nav-modern">
+        <ul id="nav-ul">
+            <li><a href="#getting-started">Getting Started</a> </li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#avatar">Avatar</a></li>
+            <li><a href="#badge">Badge</a></li>
+            <li><a href="#button">Button</a></li>
+            <li><a href="#card">Card</a></li>
+            <li><a href="#image">Image</a></li>
+            <li><a href="#input">Input</a></li>
+        </ul>
+    </nav>
+
+    <!-- NAV DESKTOP -->
+    <aside class="sidebar hide-t">
+        <div>
+            <ul class="list">
+                <li><a href="#getting-started">Getting Started</a> </li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#avatar">Avatar</a></li>
+                <li><a href="#badge">Badge</a></li>
+                <li><a href="#button">Button</a></li>
+                <li><a href="#card">Card</a></li>
+                <li><a href="#image">Image</a></li>
+                <li><a href="#input">Input</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- HEADER -->
+    <header id="getting-started" class="header">
+        <h1>Dation CSS</h1>
+        <h3>Build fast and responsive sites.</h3>
+        <h2>Declarative. Mobile First.</h2>
+        <a href="#introduction">
+            <button class="btn btn-classic secondary medium">
+                Get Started
+            </button>
+        </a>
+    </header>
+
+    <!-- FLOATING ACTION BUTTON -->
+    <button id="btn-floating" class="btn btn-floating secondary shadow hide-d">
+        <span class="x-large">
+            <>
+        </span>
+    </button>
+
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <section id="introduction">
+
+            <h1>Introduction</h1>
+            <p>Build fast and responsive websites with Dation CSS. Getting started is really quick and easy. Just copy
+                and the below code in the head of your html document</p>
+
+            <textarea
+                readonly><link rel="stylesheet" href="https://shubham-singh.github.io/dationCSS/dation.css"></textarea>
+
+
+            <p>Ideally the above link should be the top most link among your css links so that you can override it
+                according to your taste by putting your custom css below it.</p>
+
+        </section>
+
+        <hr class="hr-full">
+
+        <section id="avatar">
+            <h1>Avatar</h1>
+
+            <p>Image avatars can be created by adding <code>avatar</code> class to the <code>&lt;img&gt;</code> element
+            </p>
+
+            <div class="inline relative">
+                <img class="avatar shadow" src="https://via.placeholder.com/75">
+            </div>
+            <div class="inline relative">
+                <img class="avatar" src="https://via.placeholder.com/100">
+            </div>
+            <div class="inline relative">
+                <img class="avatar glow" src="https://via.placeholder.com/125">
+            </div>
+
+            <p>
+                You can change the size of the avatar with the <code>height</code> and <code>width</code> CSS
+                properties.
+                For perfectly rounded images make sure that height and width of the image are equal.
+            </p>
+
+            <div class="code-snippet hide-m">
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522inline%2520relative%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520shadow%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F75%2522%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522inline%2520relative%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F100%2522%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522inline%2520relative%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520glow%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F125%2522%253E%250A%253C%252Fdiv%253E"
+                    style="width: 724px; height: 384px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+
+
+        </section>
+
+        <hr class="hr-full">
+
+        <section id="badge">
+            <h1>Badge</h1>
+            <p>
+                Badges can be created by adding <code>badge</code> and <code>top/bottom</code> class to the element.
+            </p>
+
+            <hr class="hr-half">
+
+            <h2>Badge on Icons</h2>
+
+            <p>
+                Adding a class <code>top</code> to a <code>&lt;div&gt;</code> will make the badge go on top relative to
+                the icon.
+            </p>
+
+            <div class="inline relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                <div class="badge small top">7</div>
+            </div>
+
+            <div class="code-snippet">
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522inline%2520relative%2522%253E%250A%2520%2520%2520%2520%253Csvg%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%2520width%253D%252240%2522%2520height%253D%252240%2522%2520fill%253D%2522currentColor%2522%2520viewBox%253D%25220%25200%252016%252016%2522%253E%250A%2509%2509%253Cpath%2520d%253D%2522M0%25201.5A.5.5%25200%25200%25201%2520.5%25201H2a.5.5%25200%25200%25201%2520.485.379L2.89%25203H14.5a.5.5%25200%25200%25201%2520.49.598l-1%25205a.5.5%25200%25200%25201-.465.401l-9.397.472L4.415%252011H13a.5.5%25200%25200%25201%25200%25201H4a.5.5%25200%25200%25201-.491-.408L2.01%25203.607%25201.61%25202H.5a.5.5%25200%25200%25201-.5-.5zM3.102%25204l.84%25204.479%25209.144-.459L13.89%25204H3.102zM5%252012a2%25202%25200%25201%25200%25200%25204%25202%25202%25200%25200%25200%25200-4zm7%25200a2%25202%25200%25201%25200%25200%25204%25202%25202%25200%25200%25200%25200-4zm-7%25201a1%25201%25200%25201%25201%25200%25202%25201%25201%25200%25200%25201%25200-2zm7%25200a1%25201%25200%25201%25201%25200%25202%25201%25201%25200%25200%25201%25200-2z%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fsvg%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520small%2520top%2522%253E7%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 1024px; height: 384px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+
+            <hr class="hr-half">
+
+            <h2>Badge on Avatars</h2>
+            <p>
+                Adding a class <code>bottom</code> to a <code>&lt;div&gt;</code> will make the badge go tp bottom
+                relative to the avatar. This is useful to show if a user is online or not
+            </p>
+
+            <div class="inline relative">
+                <img class="avatar" src="https://via.placeholder.com/100">
+                <div class="badge bottom online"></div>
+            </div>
+
+            <div class="inline relative">
+                <img class="avatar" src="https://via.placeholder.com/100">
+                <div class="badge bottom offline"></div>
+            </div>
+
+            <div class="inline relative">
+                <img class="avatar shadow" src="https://via.placeholder.com/100">
+                <div class="badge bottom online"></div>
+            </div>
+
+            <div class="code-snippet">
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522inline%2520relative%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F100%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bottom%2520online%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522inline%2520relative%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F100%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bottom%2520offline%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522inline%2520relative%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520shadow%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F100%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bottom%2520online%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 732px; height: 438px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+
+            <p>In addition to the <code>badge</code> class, adding classes <code>online</code> or <code>offline</code>
+                will change the color of the badges as shown above.</p>
+        </section>
+
+        <hr class="hr-full">
+
+        <section id="button">
+            <h1>Button</h1>
+            <p>
+                Buttons allow users to take actions, and make choices, with a single tap. Buttons communicate actions
+                that users can take. They are typically placed throughout your UI.
+            </p>
+            <p>
+                Every button should have a base class of <code>btn</code>
+                Classes <code>x-small small medium large x-large</code> should be used to control the size of the
+                button.
+            </p>
+            <hr class="hr-half">
+
+            <h2>Primary Button</h2>
+
+            <p>Primary button matches with the <code>--primary-color</code> of your website. By defualt buttons are
+                primary unless you specify otherwise</p>
+
+            <h3>Button Modern</h3>
+            <button class="btn btn-modern shadow x-small">Button Modern</button>
+            <button class="btn btn-modern shadow small">Button Modern</button>
+            <button class="btn btn-modern shadow medium">Button Modern</button>
+            <button class="btn btn-modern shadow large">Button Modern</button>
+            <button class="btn btn-modern shadow x-large">Button Modern</button>
+
+            <div class="code-snippet">
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-modern%2520shadow%2520x-small%2522%253EButton%2520Modern%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-modern%2520shadow%2520small%2522%253EButton%2520Modern%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-modern%2520shadow%2520medium%2522%253EButton%2520Modern%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-modern%2520shadow%2520large%2522%253EButton%2520Modern%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-modern%2520shadow%2520x-large%2522%253EButton%2520Modern%253C%252Fbutton%253E"
+                    style="width: 724px; height: 276px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+
+            <p>In order to use modern buttons, add <code>btn-modern</code> class along with <code>btn</code> in the
+                <code>&lt;button&gt;</code><br>Add the class <code>shadow</code> for a even modern look.
+            </p>
+
+            <h3>Button Classic</h3>
+            <button class="btn btn-classic shadow x-small">Button Classic</button>
+            <button class="btn btn-classic shadow small">Button Classic</button>
+            <button class="btn btn-classic shadow medium">Button Classic</button>
+            <button class="btn btn-classic shadow large">Button Classic</button>
+            <button class="btn btn-classic shadow x-large">Button Classic</button>
+
+            <p>In order to use classic buttons, add <code>btn-classic</code> class along with <code>btn</code> in the
+                <code>&lt;button&gt;</code><br>Add the class <code>shadow</code> for the shadow effect.
+            </p>
+
+            <div class="code-snippet">
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-classic%2520shadow%2520x-small%2522%253EButton%2520Classic%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-classic%2520shadow%2520small%2522%253EButton%2520Classic%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-classic%2520shadow%2520medium%2522%253EButton%2520Classic%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-classic%2520shadow%2520large%2522%253EButton%2520Classic%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-classic%2520shadow%2520x-large%2522%253EButton%2520Classic%253C%252Fbutton%253E"
+                    style="width: 799px; height: 276px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+
+            <hr class="hr-half">
+
+            <h2>Secondary Button</h2>
+            <p>
+                Secondary button matches with the <code>--secondary-color</code> of your website. Add class
+                <code>secondary</code> along with <code>btn</code> to make the button secondary.
+            </p>
+            <h3>Button Modern</h3>
+            <button class="btn btn-modern secondary shadow x-small">Button Modern</button>
+            <button class="btn btn-modern secondary shadow small">Button Modern</button>
+            <button class="btn btn-modern secondary shadow medium">Button Modern</button>
+            <button class="btn btn-modern secondary shadow large">Button Modern</button>
+            <button class="btn btn-modern secondary shadow x-large">Button Modern</button>
+
+            <div class="code-snippet">
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-modern%2520secondary%2520shadow%2520x-small%2522%253EButton%2520Modern%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-modern%2520secondary%2520shadow%2520small%2522%253EButton%2520Modern%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-modern%2520secondary%2520shadow%2520medium%2522%253EButton%2520Modern%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-modern%2520secondary%2520shadow%2520large%2522%253EButton%2520Modern%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-modern%2520secondary%2520shadow%2520x-large%2522%253EButton%2520Modern%253C%252Fbutton%253E"
+                    style="width: 808px; height: 276px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+
+            <p>In order to use modern buttons, add <code>btn-modern</code> class along with <code>btn</code> in the
+                <code>&lt;button&gt;</code><br>Add the class <code>shadow</code> for a even modern look.
+            </p>
+
+            <h3>Button Classic</h3>
+            <button class="btn btn-classic secondary shadow x-small">Button Classic</button>
+            <button class="btn btn-classic secondary shadow small">Button Classic</button>
+            <button class="btn btn-classic secondary shadow medium">Button Classic</button>
+            <button class="btn btn-classic secondary shadow large">Button Classic</button>
+            <button class="btn btn-classic secondary shadow x-large">Button Classic</button>
+
+            <p>In order to use classic buttons, add <code>btn-classic</code> class along with <code>btn</code> in the
+                <code>&lt;button&gt;</code><br>Add the class <code>shadow</code> for the shadow effect.
+            </p>
+
+            <div class="code-snippet">
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-classic%2520secondary%2520shadow%2520x-small%2522%253EButton%2520Classic%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-classic%2520secondary%2520shadow%2520small%2522%253EButton%2520Classic%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-classic%2520secondary%2520shadow%2520medium%2522%253EButton%2520Classic%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-classic%2520secondary%2520shadow%2520large%2522%253EButton%2520Classic%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-classic%2520secondary%2520shadow%2520x-large%2522%253EButton%2520Classic%253C%252Fbutton%253E"
+                    style="width: 850px; height: 276px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+
+            </div>
+
+            <hr class="hr-half">
+
+            <h2>Icon Button</h2>
+
+            <p>Icon Button is no different than any other button, it takes the <code>btn</code> class. Just add svg or
+                any type of icon instead of text in the button element</p>
+
+            <button class="btn btn-classic shadow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+            </button>
+            <button class="btn btn-classic secondary shadow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+            </button>
+
+            <div class="code-snippet">
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-classic%2520shadow%2522%253E%250A%2520%2520%2520%2520%253Csvg%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%2520width%253D%252230%2522%2520height%253D%252230%2522%2520fill%253D%2522currentColor%2522%2520viewBox%253D%25220%25200%252016%252016%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cpath%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520d%253D%2522M0%25201.5A.5.5%25200%25200%25201%2520.5%25201H2a.5.5%25200%25200%25201%2520.485.379L2.89%25203H14.5a.5.5%25200%25200%25201%2520.49.598l-1%25205a.5.5%25200%25200%25201-.465.401l-9.397.472L4.415%252011H13a.5.5%25200%25200%25201%25200%25201H4a.5.5%25200%25200%25201-.491-.408L2.01%25203.607%25201.61%25202H.5a.5.5%25200%25200%25201-.5-.5zM3.102%25204l.84%25204.479%25209.144-.459L13.89%25204H3.102zM5%252012a2%25202%25200%25201%25200%25200%25204%25202%25202%25200%25200%25200%25200-4zm7%25200a2%25202%25200%25201%25200%25200%25204%25202%25202%25200%25200%25200%25200-4zm-7%25201a1%25201%25200%25201%25201%25200%25202%25201%25201%25200%25200%25201%25200-2zm7%25200a1%25201%25200%25201%25201%25200%25202%25201%25201%25200%25200%25201%25200-2z%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fsvg%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-classic%2520secondary%2520shadow%2522%253E%250A%2520%2520%2520%2520%253Csvg%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%2520width%253D%252230%2522%2520height%253D%252230%2522%2520fill%253D%2522currentColor%2522%2520viewBox%253D%25220%25200%252016%252016%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cpath%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520d%253D%2522M0%25201.5A.5.5%25200%25200%25201%2520.5%25201H2a.5.5%25200%25200%25201%2520.485.379L2.89%25203H14.5a.5.5%25200%25200%25201%2520.49.598l-1%25205a.5.5%25200%25200%25201-.465.401l-9.397.472L4.415%252011H13a.5.5%25200%25200%25201%25200%25201H4a.5.5%25200%25200%25201-.491-.408L2.01%25203.607%25201.61%25202H.5a.5.5%25200%25200%25201-.5-.5zM3.102%25204l.84%25204.479%25209.144-.459L13.89%25204H3.102zM5%252012a2%25202%25200%25201%25200%25200%25204%25202%25202%25200%25200%25200%25200-4zm7%25200a2%25202%25200%25201%25200%25200%25204%25202%25202%25200%25200%25200%25200-4zm-7%25201a1%25201%25200%25201%25201%25200%25202%25201%25201%25200%25200%25201%25200-2zm7%25200a1%25201%25200%25201%25201%25200%25202%25201%25201%25200%25200%25201%25200-2z%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fsvg%253E%250A%253C%252Fbutton%253E"
+                    style="width: 1024px; height: 546px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+
+            <hr class="hr-half">
+
+            <h2>Floating Action Button</h2>
+
+            <p>Adding class <code>btn-floating</code> along with <code>btn</code> will add a floating action button on
+                the bottom right of the screen. This site's mobile version uses a floating action button only.</p>
+
+            <div class="code-snippet">
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520id%253D%2522btn-floating%2522%2520class%253D%2522btn%2520btn-floating%2520secondary%2520shadow%2520hide-d%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522x-large%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+                    style="width: 790px; height: 276px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+
+        </section>
+
+        <hr class="hr-full">
+
+
+        <section id="card">
+
+            <h1>Card</h1>
+            <p>A card is a content container. Every card should have a <code>card</code> class. Dation provides you with
+                different types of cards.</p>
+
+            <hr class="hr-half">
+
+            <h2>Classic Card</h2>
+            <p>To add a classic card, add <code>card-classic</code> class along with the <code>card</code> class.</p>
+
+            <div class="card card-classic center">
+                <img class="card-img" src="https://via.placeholder.com/280x280">
+                <div class="card-content card-classic">
+                    <span class="large">Product Name</span>
+                    <span>Description</span>
+                    <span>Price <s>Discount</s></span>
+                </div>
+            </div>
+
+            <div class="code-snippet">
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-classic%2520center%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F280x280%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2520card-classic%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522large%2522%253EProduct%2520Name%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EDescription%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EPrice%2520%253Cs%253EDiscount%253C%252Fs%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 730px; height: 330px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+
+            <hr class="hr-half">
+
+            <h2>Modern Card</h2>
+            <p>Modern cards have cureved edges which gives a modern look. Adding <code>card-modern</code> class along
+                with <code>card</code> will give you a modern card. Adding <code>shadow</code> to the card will give it
+                a shadow.</p>
+
+            <div class="card card-modern center shadow">
+                <img class="card-img img-fully-responsive card-modern" src="https://via.placeholder.com/280x420">
+                <div class="card-content card-modern">
+                    <span class="large">Product Name</span>
+                    <span>Description</span>
+                    <span>Price <s>Discount</s></span>
+                </div>
+                <div class="card-dismiss">X</div>
+            </div>
+
+            <div class="code-snippet">
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-modern%2520center%2520shadow%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2520img-fully-responsive%2520card-modern%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F280x420%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2520card-modern%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522large%2522%253EProduct%2520Name%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EDescription%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EPrice%2520%253Cs%253EDiscount%253C%252Fs%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-dismiss%2522%253EX%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 1002px; height: 348px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+
+            <hr class="hr-half">
+
+            <h2>Text Card</h2>
+            <p>These are text only cards without any images. Adding <code>card-text</code> along with <code>card</code>
+                class will give you text card.</p>
+
+            <div class="card card-modern card-text center glow">
+                <div class="p-l">
+                    <h1>Heading</h1>
+                    <p class="medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quibusdam
+                        voluptatum
+                        assumenda, est tempore quasi qui dolorum autem exercitationem perspiciatis aspernatur fuga
+                        minima.
+                        Facilis, repellendus! Odio, laboriosam nulla. Aut, explicabo!</p>
+                    <button class="btn btn-modern m-null p-s pl-xl pr-xl medium shadow">button</button>
+                </div>
+            </div>
+
+            <div class="code-snippet">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-modern%2520card-text%2520center%2520glow%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522p-l%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253EHeading%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522medium%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Pariatur%2520quibusdam%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520voluptatum%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520assumenda%252C%2520est%2520tempore%2520quasi%2520qui%2520dolorum%2520autem%2520exercitationem%2520perspiciatis%2520aspernatur%2520fuga%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520minima.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Facilis%252C%2520repellendus%21%2520Odio%252C%2520laboriosam%2520nulla.%2520Aut%252C%2520explicabo%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-modern%2520m-null%2520p-s%2520pl-xl%2520pr-xl%2520medium%2520shadow%2522%253Ebutton%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 1020px; height: 384px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+        </section>
+
+
+        <hr class="hr-full">
+
+        <section id="image">
+            <h1>Images</h1>
+            <p>Images are an essential part for any website. Adding <code>img</code> class will make them responsive. If
+                you want round images, add <code>avatar</code> class. For perfectly round images make sure the height
+                and width of the image are same.</p>
+        </section>
+
+        <hr class="hr-full">
+
+        <section id="input">
+            <h1>Textbox</h1>
+            <p>Textbox are used to take input from the user. Adding <code>input-text</code> class to the
+                <code>&lt;input&gt;</code> element will give you a modern and responsive textbox
+            </p>
+
+            <input class="block center input-text" type="text" placeholder="textbox">
+
+            <div class="code-snippet">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cinput%2520class%253D%2522block%2520center%2520input-text%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522textbox%2522%253E"
+                    style="width: 766px; height: 204px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
