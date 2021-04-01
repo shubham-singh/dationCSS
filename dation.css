@@ -1,43 +1,36 @@
 :root {
     scroll-behavior: smooth;
-    /* --primary-color: white;
-    --secondary-color: black; */
-    
-    /* --primary-color: #1DA1F2;
-    --secondary-color: black; */
-    
-    /* --primary-color: #1DA1F2;
-    --secondary-color: white; */
-
-    /* --primary-color: white;
-    --secondary-color: black; */
 
     --primary-color: black;
     --secondary-color: white;
     
     --shadow-color: #9CA3AF;
-    /* --glow-color: blue; */
-    --glow-color: green;
+
+    --glow-color: magenta;
 
     --dark-grey: #6B7280;
     --off-white: #F3F4F6;
     
-    /* --nav-bg-color: #1DA1F2; */
-    /* --nav-bg-color: black; */
     --nav-bg-color: var(--primary-color);
     --nav-txt-color: var(--secondary-color);
 
-    --padding-xs: 0.3em;
-    --padding-s: 0.7em;
-    --padding-m: 1em;
-    --padding-l: 1.3em;
-    --padding-xl: 2em;
+    --space-xs: 0.3em;
+    --space-s: 0.7em;
+    --space-m: 1em;
+    --space-l: 1.2em;
+    --space-xl: 2em;
 
-    --margin-xs: 0.3em;
-    --margin-s: 0.7em;
-    --margin-m: 1em;
-    --margin-l: 1.3em;
-    --margin-xl: 2em;
+    --padding-xs: var(--space-xs);
+    --padding-s: var(--space-s);
+    --padding-m: var(--space-m);
+    --padding-l: var(--space-l);
+    --padding-xl: var(--space-xl);
+
+    --margin-xs: var(--space-xs);
+    --margin-s: var(--space-s);
+    --margin-m: var(--space-m);
+    --margin-l: var(--space-l);
+    --margin-xl: var(--space-xl);
 
     --border-radius-xs: 0.5em;
     --border-radius-s: 1em;
@@ -45,7 +38,6 @@
     --border-radius-l: 2.5em;
 
     --btn-bg-color: var(--primary-color);
-    /* --btn-border-color: var(--secondary-color); */
     --btn-txt-color: var(--secondary-color);
 
     --card-width: 280px;
@@ -71,7 +63,6 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     margin: 0;
-    /* background: gray; */
 }
 
 .alert {
@@ -167,18 +158,6 @@ body {
     background-color: var(--btn-txt-color);
     color: var(--btn-bg-color);
 }
-
-/* .secondary:hover {
-    background: var(--btn-bg-color);
-    color: var(--btn-txt-color);
-}
-
-
-.secondary:active {
-    background: var(--btn-bg-color);
-    color: var(--btn-txt-color);
-} */
-
 
 /* CARDS */
 .card {
@@ -368,9 +347,6 @@ li a {
     max-width: 100%;
     max-height: 100%;
 }
-
-
-
 
 .input-text {
     padding: var(--padding-s);
@@ -683,21 +659,3 @@ li a {
 .pb-xl {
     padding-bottom: var(--padding-xl);
 }
-
-/* Padding Left Right */
-
-/* .plr-xs {
-    paddin: var(--padding-xs);
-}
-.plr-s {
-    paddin: var(--padding-s);
-}
-.plr-m {
-    paddin: var(--padding-m);
-}
-.plr-l {
-    paddin: var(--padding-l);
-}
-.plr-xl {
-    paddin: var(--padding-xl);
-} */
