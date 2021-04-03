@@ -676,15 +676,15 @@ li a {
     .product-name {
         text-align: left;
         margin: 0.5rem 0;
-        color: "black";
+        color: black;
     }
     
     .product-origin {
         text-align: left;
         margin: 0.5rem 0;
-        color: grey;
-        
+        color: grey; 
     }
+
     .product-price {
         text-align: left;
         margin-top: 0.5rem;
@@ -735,8 +735,20 @@ li a {
         justify-content: center;
         position: relative;
     }
+
+    .product-name {
+        text-align: left;
+        color: black;
+    }
+    
+    .product-origin {
+        text-align: left;
+        color: grey; 
+    }
     
     .product-price {
+        text-align: left;
+        color: black;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
