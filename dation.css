@@ -753,7 +753,7 @@ li a {
         margin-bottom: 1rem;
     }
     
-    .product-content button {
+    .cart-action {
         position: absolute;
         bottom: 0;
         width: 100%;
