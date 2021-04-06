@@ -718,11 +718,12 @@ li a {
     
     .product-image {
         margin-right: 1rem;
+        width: 140px;
     }
     
     .product-image img {
         height: 210px;
-        width: 140px;
+        max-width: 100%;
         object-fit: contain;
         border-radius: 0.7rem;
     }
