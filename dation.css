@@ -724,16 +724,8 @@ li a {
     .hide-t {
         display: none;
     }
-}
 
-@media screen and (max-width: 425px)
-{
-    
-    .card {
-        display: block;
-        width: 85vw;
-        height: 70vh;
-    }
+    /* PRODUCT CARD */
     .product-card {
         display: flex;
         flex-direction: row;
@@ -781,6 +773,16 @@ li a {
         position: absolute;
         bottom: 0;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px)
+{
+    
+    .card {
+        display: block;
+        width: 85vw;
+        height: 70vh;
     }
     .hide-m {
         display: none;
