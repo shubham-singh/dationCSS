@@ -374,6 +374,28 @@ li a {
     display: block;
 }
 
+.flex-r {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-a {
+    justify-content: space-around;
+}
+
+.justify-b {
+    justify-content: space-between;
+}
+
+.justify-e {
+    justify-content: space-evenly;
+}
+
 .hide {
     display: none;
 }
@@ -421,6 +443,10 @@ li a {
 
 .w-full {
     width: 100%;
+}
+
+.h-full {
+    height: 100%;
 }
 
 *::selection {
