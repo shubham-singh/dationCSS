@@ -652,7 +652,7 @@ li a {
     padding-bottom: var(--padding-xl);
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 769px)
 {
     .nav-classic{
         justify-content: space-around;
@@ -720,7 +720,7 @@ li a {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .hide-t {
         display: none;
     }
@@ -728,6 +728,7 @@ li a {
     /* PRODUCT CARD */
     .product-card {
         display: flex;
+        position: relative;
         flex-direction: row;
         height: 210px;
         width: 90vw;
