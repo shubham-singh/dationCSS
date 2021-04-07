@@ -396,6 +396,10 @@ li a {
     justify-content: space-evenly;
 }
 
+.justify-c {
+    justify-content: center;
+}
+
 .hide {
     display: none;
 }
@@ -445,8 +449,16 @@ li a {
     width: 100%;
 }
 
+.w-full-vp {
+    width: 100vw;
+}
+
 .h-full {
     height: 100%;
+}
+
+.h-full-vp {
+    height: 100vh;
 }
 
 *::selection {
