@@ -110,6 +110,10 @@ body {
     outline: none;
 }
 
+.btn-disabled {
+    cursor: not-allowed;
+}
+
 .btn-floating {
     display: flex;
     position: fixed;
