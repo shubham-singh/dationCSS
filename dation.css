@@ -400,6 +400,10 @@ li a {
     justify-content: center;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .hide {
     display: none;
 }
