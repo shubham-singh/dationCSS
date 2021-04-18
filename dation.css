@@ -312,6 +312,19 @@ li a {
     margin: var(--margin-s) auto;
 }
 
+.txt-badge {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: var(--space-xs);
+    padding: var(--padding-xs) var(--padding-s);
+    margin: 0 var(--margin-s);
+  }
+
+.txt-badge-secondary {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
 .top {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -324,6 +337,7 @@ li a {
     right: 10%;
     border: 2px solid white;
 }
+
 
 .online{
     background-color: green;
@@ -386,6 +400,20 @@ li a {
 .flex-c {
     display: flex;
     flex-direction: column;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .justify-a {
@@ -795,11 +823,55 @@ li a {
         bottom: 0;
         width: 100%;
     }
+
+    /* Popup */
+    .popup {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        backdrop-filter: brightness(50%);
+    }
+    
+    .popup-half {
+    height: 40%;
+    }
+    .popup-full {
+    height: 80%;
+    }
+    
+    .popup-empty {
+    flex-grow: 1;
+    }
+    
+    .popup-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: var(--padding-l);
+    border-top-left-radius: var(--border-radius-s);
+    border-top-right-radius: var(--border-radius-s);
+    }
+    
+    .popup-content a {
+    text-decoration: none;
+    padding: var(--padding-m);
+    cursor: pointer;
+    color: var(--primary-color);
+    }
+    
+    .popup-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
 }
 
 @media screen and (max-width: 425px)
 {
-    
     .card {
         display: block;
         width: 85vw;
