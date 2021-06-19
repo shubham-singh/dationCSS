@@ -304,17 +304,6 @@ li a {
     margin: 0 var(--margin-m);
 }
 
-/* SNACKBAR */
-.snackbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    z-index: 4;
-}
-
 .nav-modern {
     position: fixed;
     display: flex;
@@ -979,6 +968,17 @@ li a {
     /* Form CREDENTIALS */
     .form-credentials {
         width: 85vw;
+    }
+
+    /* SNACKBAR */
+    .snackbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        z-index: 4;
     }
 
 }
