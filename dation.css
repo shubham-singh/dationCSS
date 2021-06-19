@@ -231,6 +231,35 @@ body {
     cursor: pointer;
 }
 
+/* FORM CREDENTIALS */
+
+.form-container {
+    background-color: #f9f9f9;
+    height: 100vh;
+  }
+  
+  .form-container a {
+    color: grey;
+    text-decoration: none;
+  }
+  
+  .form-credentials {
+    padding: var(--padding-xl);
+    background-color: white;
+  }
+  
+  .form-credentials > input {
+    border: 1px solid grey;
+    margin: var(--margin-xs);
+    padding: var(--padding-s);
+    font-size: var(--medium);
+  }
+  
+  .form-credentials > input :focus {
+    border: 1px solid black;
+  }
+
+
 .list li {
     list-style: none;
     margin: var(--margin-s);
@@ -828,8 +857,14 @@ li a {
         margin-bottom: 1rem;
         color: "black";
     }
+
     .hide-d {
         display: none;
+    }
+
+    /* FORM CREDENTIALS */
+    .form-credentials {
+        width: 21vw;
     }
 }
 
@@ -890,7 +925,7 @@ li a {
         width: 100%;
     }
 
-    /* Popup */
+    /* POPUP */
     .popup {
         position: fixed;
         height: 100vh;
@@ -932,6 +967,11 @@ li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    }
+
+    /* Form CREDENTIALS */
+    .form-credentials {
+        width: 85vw;
     }
 
 }
