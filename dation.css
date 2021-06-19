@@ -304,6 +304,17 @@ li a {
     margin: 0 var(--margin-m);
 }
 
+/* SNACKBAR */
+.snackbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    z-index: 4;
+}
+
 .nav-modern {
     position: fixed;
     display: flex;
@@ -528,18 +539,6 @@ li a {
 * {
     -webkit-tap-highlight-color: transparent;
 }
-
-/* SNACKBAR */
-.snackbar {
-    position: fixed;
-    margin: var(--margin-xs);
-    padding: 0 5em 0 var(--padding-xl);
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    bottom: 0;
-    left: 0;
-    z-index: 4;
-  }
 
 /* SPINNER */
 .spinner {
@@ -861,6 +860,19 @@ li a {
     .form-credentials {
         width: 21vw;
     }
+
+    /* SNACKBAR */
+    .snackbar {
+        position: fixed;
+        margin: var(--margin-xs);
+        padding: 0 5em 0 var(--padding-xl);
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        bottom: 0;
+        left: 0;
+        z-index: 4;
+    }
+
 }
 
 
