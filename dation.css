@@ -238,26 +238,21 @@ body {
     height: 100vh;
   }
   
-  .form-container a {
-    color: grey;
-    text-decoration: none;
-  }
-  
-  .form-credentials {
+.form-credentials {
     padding: var(--padding-xl);
     background-color: white;
-  }
-  
-  .form-credentials > input {
+}
+
+.form-credentials > input {
     border: 1px solid grey;
     margin: var(--margin-xs);
     padding: var(--padding-s);
     font-size: var(--medium);
-  }
-  
-  .form-credentials > input :focus {
+}
+
+.form-credentials > input :focus {
     border: 1px solid black;
-  }
+}
 
 
 .list li {
